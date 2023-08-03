@@ -1,1 +1,1 @@
-require("./main-page/main-page");
+require("./main-page");
