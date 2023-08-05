@@ -1,12 +1,10 @@
 import "./style.scss";
-import bg from "../../static/img/background-image.png"
+import html from "./index.html";
+
 
 function component() {
   const element = document.createElement("div");
-
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = "Hello" + "webpack" + " ";
-
+  element.innerHTML = html;
   return element;
 }
 

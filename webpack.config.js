@@ -31,10 +31,21 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-              publicPath: 'static',
-              name: '[path][name].[ext]',
+              publicPath: "static",
+              name: "[path][name].[ext]",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader",
+            options: {
+              minimize: true,
             },
           },
         ],
