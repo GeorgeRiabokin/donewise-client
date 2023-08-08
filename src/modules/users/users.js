@@ -1,10 +1,5 @@
 import "./users.scss";
 import html from "./users.html";
+import "../../base/ViewRender";
 
-function component() {
-  const element = document.createElement("section");
-  element.innerHTML = html;
-  return element;
-}
-
-document.body.appendChild(component());
+ViewRender("section", html);
