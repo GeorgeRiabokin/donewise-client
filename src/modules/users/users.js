@@ -1,5 +1,5 @@
 import "./users.scss";
 import html from "./users.html";
-import "../../base/ViewRender";
+import ViewRender from "../../base/ViewRender";
 
 ViewRender("section", html);

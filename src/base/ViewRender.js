@@ -8,3 +8,5 @@ function ViewRender(elementType, html) {
     element.innerHTML = html;
     document.body.appendChild(element);
 }
+
+export default ViewRender;
