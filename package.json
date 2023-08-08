@@ -21,6 +21,7 @@
   "devDependencies": {
     "css-loader": "^6.8.1",
     "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
     "live-server": "^1.2.2",
     "sass-loader": "^13.3.2",

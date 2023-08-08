@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   watch: true,
-  entry: "./src/index.js",
+  entry: "./src/app/index.js",
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "app.bundle.js",
@@ -31,10 +31,21 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-              publicPath: 'static',
-              name: '[path][name].[ext]',
+              publicPath: "static",
+              name: "[path][name].[ext]",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader",
+            options: {
+              minimize: true,
             },
           },
         ],
