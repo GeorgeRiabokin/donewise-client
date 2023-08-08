@@ -1,11 +1,3 @@
-import "./style.scss";
-import html from "./index.html";
+import "../../modules/header/header.js";
+import "../../modules/users/users.js";
 
-
-function component() {
-  const element = document.createElement("div");
-  element.innerHTML = html;
-  return element;
-}
-
-document.body.appendChild(component());
