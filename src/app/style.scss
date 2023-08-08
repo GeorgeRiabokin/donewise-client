@@ -9,7 +9,8 @@ body {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  background: hsl(0 0% 20%);
+  background: #272822;
+  font-family: monospace;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
