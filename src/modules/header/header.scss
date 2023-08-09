@@ -1,24 +1,9 @@
-.boujee-text {
+.logo-text {
   color: #fff;
   font-size: clamp(3rem, 25vmin, 8rem);
   font-family: 'Roboto Mono', monospace;
   font-weight: 1000;
   &__colorful {
     color: #db294e;
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .boujee-text {
-    animation: change-colors 8s linear infinite;
-  }
-}
-
-@keyframes change-colors {
-  0%, 100% {
-    color: var(--color-one);
-  }
-  50% {
-    color: var(--color-two);
   }
 }
