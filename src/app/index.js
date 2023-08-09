@@ -3,5 +3,6 @@
 */
 
 import "./style.scss";
+import MainPage from "../pages/main-page/main-page";
 
-require("../pages/main-page");
+MainPage();

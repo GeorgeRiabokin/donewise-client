@@ -1,5 +1,9 @@
 import "./header.scss";
 import html from "./header.html";
-import ViewRender from "../../base/ViewRender";
+import ViewRender from "../../helpers/ViewRender";
 
-ViewRender("h1", html);
+function Header() {
+    return ViewRender("h1", html);
+}
+
+export default Header;
