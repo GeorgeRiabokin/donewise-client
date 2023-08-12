@@ -28,18 +28,6 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              publicPath: "static",
-              name: "[path][name].[ext]",
-            },
-          },
-        ],
-      },
-      {
         test: /\.html$/,
         use: [
           {
